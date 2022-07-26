@@ -10,27 +10,27 @@ This app predicts the **Stroke patient**
 st.sidebar.header('User Input Parameters')
 
 def user_input_features():
-    gender == st.sidebar.selectbox(
+    gender = st.sidebar.radio(
     "Choose a gender",   
     ('Male', 'Female'),
-    )
+    index = 0)
 
-    smoke == st.sidebar.selectbox(
+    smoke = st.sidebar.radio(
     "Smoking Status",   
     ('never smoked', 'formerly smoked','smoke'),
-    )
+    index = 0)
 
     age = st.sidebar.slider('Age', 0, 90, 40)
 
-    married == st.sidebar.selectbox(
+    married = st.sidebar.radio(
     "Ever Married?",   
     ('Yes', 'No'),
-    )
+    index = 0)
 
-    residence == st.sidebar.selectbox(
+    residence = st.sidebar.radio(
     "Residence Type",   
     ('Rural', 'Urban'),
-    )
+    index = 0)
     glucose = st.sidebar.slider('Average Glucose Level', 50, 300, 150)
     
     data = {'gender': gender,
